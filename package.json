@@ -1,13 +1,13 @@
 {
   "name": "qaytmaydi.com",
   "version": "1.0.0",
-  "description": "Web Application Framework and Admin GUI / Content Management System built on Express.js and Mongoose",
+  "description": "A phalcon mutli-module demo.",
   "author": "Frank kennedy Yuan",
   "homepage": "https://www.qaytmaydi.com/",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://git.oschina.net/jicker/qaytmaydi.git"
+    "url": "https://github.com/kideny/qaytmaydi"
   },
   "dependencies": {
     "admin-lte": "^2.3.8",
