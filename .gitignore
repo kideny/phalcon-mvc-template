@@ -4,3 +4,4 @@ phalcon.phar
 composer.lock
 composer.phar
 /cache/
+debug.log
