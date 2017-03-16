@@ -25,8 +25,8 @@ To run this application on your machine, you need at least:
 
 Then you'll need to create the database and initialize schema:
 
-echo 'CREATE DATABASE vokuro' | mysql -u root
-cat schemas/vokuro.sql | mysql -u root vokuro
+echo 'CREATE DATABASE qaytmaydi' | mysql -u root
+cat schemas/qaytmaydi.sql | mysql -u root qaytmaydi
 
 Also you can override application config by creating app/config/config.php (already gitignored).
 Installing Dependencies via Composer
@@ -37,7 +37,7 @@ curl -s http://getcomposer.org/installer | php
 
 Run the composer installer:
 
-cd vokuro
+cd qaytmaydi
 php composer.phar install
 
 Improving this Sample
