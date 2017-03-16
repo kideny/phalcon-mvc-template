@@ -1,9 +1,9 @@
 {
-  "name": "Qaytmaydi",
+  "name": "qaytmaydi",
   "version": "1.0.0",
   "description": "A phalcon mutli-module demo.",
   "author": "Frank kennedy Yuan",
-  "homepage": "https://www.qaytmaydi.com/",
+  "homepage": "https://github.com/kideny/qaytmaydi",
   "license": "MIT",
   "repository": {
     "type": "git",
