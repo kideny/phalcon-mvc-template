@@ -24,12 +24,12 @@ use Phalcon\Mvc\ModelInterface;
 use Phalcon\Mvc\Model\Behavior;
 use Qaytmaydi\Backend\Models\AuditDetail;
 use Phalcon\Mvc\Model\BehaviorInterface;
-use Phanbook\Common\Library\Behavior\Di as DiBehavior;
+use Qaytmaydi\Common\Library\Behavior\Di as DiBehavior;
 
 /**
 * \Qaytmaydi\Backend\Models\Behavior\Blameable
 *
-* @package Phanbook\Models\Behavior
+* @package Qaytmaydi\Models\Behavior
 */
 class Blameable extends Behavior implements BehaviorInterface
 {
@@ -90,7 +90,7 @@ class Blameable extends Behavior implements BehaviorInterface
             return null;
         }
 
-        /** @var \Phanbook\Auth\Auth $auth */
+        /** @var \Qaytmaydi\Auth\Auth $auth */
         $auth = $this->getDI()->getShared('auth');
 
         if ($auth->isAuthorizedVisitor()) {

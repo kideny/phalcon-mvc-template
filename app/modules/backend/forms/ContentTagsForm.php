@@ -16,7 +16,7 @@
 +------------------------------------------------------------------------+
 */
 
-namespace Phanbook\Backend\Forms;
+namespace Qaytmaydi\Backend\Forms;
 
 use Phalcon\Forms\Form;
 use Phalcon\Forms\Element\Text;

@@ -17,12 +17,12 @@
 namespace Qaytmaydi\Backend\Models;
 
 /**
- * \Phanbook\Models\Settings
+ * \Qaytmaydi\Models\Settings
  *
  * @method static Settings|false findFirstByName(string $name)
  * @method static Settings|false findFirstById(int $id)
  *
- * @package Phanbook\Models
+ * @package Qaytmaydi\Models
  */
 class Settings extends ModelBase
 {

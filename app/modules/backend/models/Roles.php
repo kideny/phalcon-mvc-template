@@ -19,7 +19,7 @@ namespace Qaytmaydi\Backend\Models;
 use Phalcon\Mvc\Model\Resultset\Simple;
 
 /**
-* Phanbook\Models\Roles
+* Qaytmaydi\Models\Roles
 *
 * @property int    $id
 * @property string $name
@@ -34,7 +34,7 @@ use Phalcon\Mvc\Model\Resultset\Simple;
 * @method static Roles|false findFirst($params = null)
 * @method static Roles|false findFirstByIsDefault(bool $flag)
 *
-* @package Phanbook\Models
+* @package Qaytmaydi\Models
 */
 class Roles extends Model
 {
