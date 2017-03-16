@@ -1,0 +1,64 @@
+{
+    "name": "www.qaytmaydi.com",
+    "description": "qaytmaydi is a website.",
+    "keywords": [
+        "qaytmaydi",
+        "website",
+        "bootstrap",
+        "phalcon",
+        "php7"
+    ],
+    "require": {
+        "php": ">=7.0",
+        "ext-phalcon": "^3.0",
+        "phalcon/incubator": "~3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.7.*",
+        "squizlabs/php_codesniffer": "2.*",
+        "phpdocumentor/reflection-docblock": "3.1.*",
+        "phalcon/devtools": "3.0.*",
+        "codeception/codeception": "~2.2"
+    },
+    "license": "GPL v2",
+    "authors": [
+        {
+            "name": "Frank Kennedy Yuan",
+            "email": "528803867@qq.com",
+            "homepage": "http://www.jicker.cn"
+        },
+        {
+            "name": "StarMigration Company",
+            "homepage": "https://www.qm2014.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Phalcon\\": "Library/Phalcon/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Phalcon\\Test\\Unit\\": "tests/unit/",
+            "Phalcon\\Test\\Integration\\": "tests/integration/",
+            "Phalcon\\Test\\Proxy\\": "tests/_proxies/",
+            "Phalcon\\Test\\Module\\": "tests/_support/Module/"
+        }
+    },
+    "support": {
+        "issues": "https://github.com/phalcon/cphalcon/issues",
+        "source": "https://github.com/phalcon/cphalcon",
+        "forum": "https://forum.phalconphp.com/",
+        "docs": "http://docs.phalconphp.com/",
+        "wiki": "https://github.com/phalcon/cphalcon/wiki",
+        "irc": "irc://irc.freenode.org/phalconphp",
+        "rss" : "https://blog.phalconphp.com/rss"
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+
+}

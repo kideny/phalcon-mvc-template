@@ -1,0 +1,19 @@
+{
+  "name": "qaytmaydi.com",
+  "version": "1.0.0",
+  "description": "Web Application Framework and Admin GUI / Content Management System built on Express.js and Mongoose",
+  "author": "Frank kennedy Yuan",
+  "homepage": "https://www.qaytmaydi.com/",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://git.oschina.net/jicker/qaytmaydi.git"
+  },
+  "dependencies": {
+    "admin-lte": "^2.3.8",
+    "bootstrap": "^4.0.0-alpha.6",
+    "jquery": "^2.2.*",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  }
+}

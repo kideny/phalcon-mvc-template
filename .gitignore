@@ -1,2 +1,6 @@
-*
-!.gitignore
+.idea
+.DS_Store
+phalcon.phar
+composer.lock
+composer.phar
+/cache/

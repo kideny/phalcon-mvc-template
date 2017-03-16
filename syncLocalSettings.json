@@ -1,0 +1,15 @@
+{
+    "ignoreUploadFiles": [
+        "projects.json",
+        "projects_cache_git.json"
+    ],
+    "ignoreUploadFolders": [
+        "workspaceStorage"
+    ],
+    "replaceCodeSettings":
+    {
+        "http.proxy" :"",
+        "files.autoSave" :"off"
+
+    }
+}

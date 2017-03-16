@@ -1,0 +1,94 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+// 编辑器
+
+    // 控制字体大小。
+    "editor.fontSize": 14,
+
+    // 控制字体系列。
+    "editor.fontFamily": "Consolas",
+
+    // 控制换行的行的缩进。可以是"none"、 "same" 或 "indent"。
+    "editor.wrappingIndent": "indent",
+
+    // 控制编辑器是否应呈现空白字符
+    "editor.renderWhitespace": "all",
+
+    // 控制编辑器是否应呈现控制字符
+    "editor.renderControlCharacters": true,
+
+    // 控制编辑器是否应呈现缩进参考线
+    "editor.renderIndentGuides": true,
+
+    // Controls if the editor should automatically format the line after typing
+    "editor.formatOnType": true,
+
+// PHP
+
+    // 不管 php 验证是否已启用。
+    "php.validate.enable": true,
+
+    // Points to the php executable.
+    "php.validate.executablePath": "C:/php/php.exe",
+
+    "php.validate.run": "onType",
+
+    // Link file types to the beautifier type
+    "beautify.language": {
+        "js": {
+            "type": [
+                "javascript",
+                "json"
+            ],
+            "filename": [
+                ".jshintrc",
+                ".jsbeautify"
+            ]
+        },
+        "css": [
+            "css",
+            "scss"
+        ],
+        "html": [
+            "htm",
+            "html",
+            "phtml",
+            "volt"
+        ]
+    },
+
+// 文件
+
+    // 启用后，将在保存文件时剪裁尾随空格。
+    "files.trimTrailingWhitespace": true,
+
+    "git.confirmSync": false,
+
+    "files.autoSave": "afterDelay",
+
+    "extensions.autoUpdate": true,
+
+    "sync.gist": "aa195b4a29d5b008a676fca746a81329",
+
+    "sync.lastUpload": "2017-01-09T07:11:47.132Z",
+
+    "sync.autoDownload": false,
+
+    "sync.autoUpload": false,
+
+    "sync.lastDownload": "1970-01-01T00:00:00.000Z",
+
+    "sync.version": 242,
+
+    "sync.showSummary": true,
+
+    "sync.forceDownload": false,
+
+    "sync.workspaceSync": true,
+
+    "sync.anonymousGist": false,
+
+    "phpformatter.composer": true,
+
+    "vsicons.presets.angular": false
+}
