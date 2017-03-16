@@ -1,5 +1,6 @@
 .idea
 .DS_Store
+.vscode
 phalcon.phar
 composer.lock
 composer.phar
