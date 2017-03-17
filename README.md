@@ -9,7 +9,7 @@ Please write us if you have any feedback.
 Thanks.
 NOTE
 
-Samples：
+Demo
 
 ![项目演示](https://github.com/kideny/qaytmaydi/blob/master/samples/backend.png)
 
