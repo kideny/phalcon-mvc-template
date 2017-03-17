@@ -19,12 +19,13 @@ Requirements
 
 To run this application on your machine, you need at least:
 
-        = PHP 5.6
+    PHP >= 5.6
 
-        = Phalcon 3.0
+    Phalcon >= 3.0
 
     Apache Web Server with mod_rewrite enabled, and AllowOverride Options (or All) in your httpd.conf or Nginx Web Server
     Latest Phalcon Framework extension installed/enabled
+
     MySQL >= 5.6
 
 Then you'll need to create the database and initialize schema:
