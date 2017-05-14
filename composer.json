@@ -1,6 +1,6 @@
 {
     "name": "DragonPHP",
-    "description": "DragonPHP is a phalcon mutli-module demo.",
+    "description": "DragonPHP is a fast PHP Framework.",
     "keywords": [
         "dragonphp",
         "website",
@@ -20,7 +20,7 @@
         "phalcon/devtools": "3.0.*",
         "codeception/codeception": "~2.2"
     },
-    "license": "GPL v2",
+    "license": "BSD",
     "authors": [
         {
             "name": "Frank Kennedy Yuan",
@@ -28,8 +28,8 @@
             "homepage": "http://www.jicker.cn"
         },
         {
-            "name": "StarMigration Company",
-            "homepage": "https://www.qm2014.com"
+            "name": "DragonPHP Company",
+            "homepage": "https://www.dragonphp.com"
         }
     ],
     "autoload": {
@@ -46,13 +46,13 @@
         }
     },
     "support": {
-        "issues": "https://github.com/phalcon/cphalcon/issues",
-        "source": "https://github.com/phalcon/cphalcon",
-        "forum": "https://forum.phalconphp.com/",
-        "docs": "http://docs.phalconphp.com/",
-        "wiki": "https://github.com/phalcon/cphalcon/wiki",
-        "irc": "irc://irc.freenode.org/phalconphp",
-        "rss" : "https://blog.phalconphp.com/rss"
+        "issues": "https://github.com/kideny/dragonphp/issues",
+        "source": "https://github.com/kideny/dragonphp",
+        "forum": "https://forum.dragonphp.com/",
+        "docs": "http://docs.dragonphp.com/",
+        "wiki": "https://github.com/kideny/dragonphp/wiki",
+        "irc": "irc://irc.freenode.org/dragonphp",
+        "rss" : "https://blog.dragonphp.com/rss"
     },
     "repositories": {
         "packagist": {
