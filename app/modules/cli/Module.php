@@ -1,5 +1,5 @@
 <?php
-namespace Qaytmaydi\Cli;
+namespace DragonPHP\Cli;
 
 use Phalcon\DiInterface;
 use Phalcon\Loader;
@@ -14,7 +14,7 @@ class Module implements ModuleDefinitionInterface
      */
     public function getHandlersNamespace()
     {
-        return 'Qaytmaydi\Cli\Tasks';
+        return 'DragonPHP\Cli\Tasks';
     }
 
     /**
@@ -28,7 +28,7 @@ class Module implements ModuleDefinitionInterface
 
         $loader->registerNamespaces([
             $this->getHandlersNamespace()    => __DIR__ . '/tasks/',
-            'Qaytmaydi\Cli\Library'           => __DIR__ . '/library/',
+            'DragonPHP\Cli\Library'           => __DIR__ . '/library/',
         ]);
 
         $loader->register();

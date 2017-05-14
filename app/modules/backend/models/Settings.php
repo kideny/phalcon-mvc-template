@@ -1,9 +1,9 @@
 <?php
 /*
 +------------------------------------------------------------------------+
-| Qaytmaydi                                                             |
+| DragonPHP                                                             |
 +------------------------------------------------------------------------+
-| Copyright (c) 2016-2017 Qaytmaydi Team and contributors                  |
+| Copyright (c) 2016-2017 DragonPHP Team and contributors                  |
 +------------------------------------------------------------------------+
 | This source file is subject to the New BSD License that is bundled     |
 | with this package in the file LICENSE.txt.                             |
@@ -14,15 +14,15 @@
 +------------------------------------------------------------------------+
 */
 
-namespace Qaytmaydi\Backend\Models;
+namespace DragonPHP\Backend\Models;
 
 /**
- * \Qaytmaydi\Models\Settings
+ * \DragonPHP\Models\Settings
  *
  * @method static Settings|false findFirstByName(string $name)
  * @method static Settings|false findFirstById(int $id)
  *
- * @package Qaytmaydi\Models
+ * @package DragonPHP\Models
  */
 class Settings extends ModelBase
 {

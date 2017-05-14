@@ -2,9 +2,9 @@
 
 /*
 +------------------------------------------------------------------------+
-| Qaytmaydi                                                             |
+| DragonPHP                                                             |
 +------------------------------------------------------------------------+
-| Copyright (c) 2013-2016 Qaytmaydi Team and contributors                  |
+| Copyright (c) 2013-2016 DragonPHP Team and contributors                  |
 +------------------------------------------------------------------------+
 | This source file is subject to the New BSD License that is bundled     |
 | with this package in the file LICENSE.txt.                             |
@@ -15,16 +15,16 @@
 +------------------------------------------------------------------------+
 */
 
-namespace Qaytmaydi\Backend\Listeners;
+namespace DragonPHP\Backend\Listeners;
 
 use Phalcon\Dispatcher;
 use Phalcon\Events\Event;
 use Phalcon\Mvc\Dispatcher\Exception;
 
 /**
-* Qaytmaydi\Listeners\DispatcherListener
+* DragonPHP\Listeners\DispatcherListener
 *
-* @package Qaytmaydi\Listener
+* @package DragonPHP\Listener
 */
 class DispatcherListener extends AbstractListener
 {

@@ -1,9 +1,9 @@
 <?php
 /*
 +------------------------------------------------------------------------+
-| Qaytmaydi                                                             |
+| DragonPHP                                                             |
 +------------------------------------------------------------------------+
-| Copyright (c) 2016-2017 Qaytmaydi Team and contributors                  |
+| Copyright (c) 2016-2017 DragonPHP Team and contributors                  |
 +------------------------------------------------------------------------+
 | This source file is subject to the New BSD License that is bundled     |
 | with this package in the file LICENSE.txt.                             |
@@ -14,7 +14,7 @@
 +------------------------------------------------------------------------+
 */
 
-namespace Qaytmaydi\Backend\Library\Validators;
+namespace DragonPHP\Backend\Library\Validators;
 
 use Phalcon\Validation\Validator;
 use Phalcon\Validation\ValidatorInterface;

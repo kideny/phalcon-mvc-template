@@ -2,9 +2,9 @@
 
 /*
 +------------------------------------------------------------------------+
-| Qaytmaydi Website                                                      |
+| DragonPHP Website                                                      |
 +------------------------------------------------------------------------+
-| Copyright (c) 2016-2017 Qaytmaydi Team (https://www.qaytmaydi.com)      |
+| Copyright (c) 2016-2017 DragonPHP Team (https://www.qaytmaydi.com)      |
 +------------------------------------------------------------------------+
 | This source file is subject to the New BSD License that is bundled     |
 | with this package in the file LICENSE.txt.                             |
@@ -17,16 +17,16 @@
 +------------------------------------------------------------------------+
 */
 
-namespace Qaytmaydi\User\Controllers;
+namespace DragonPHP\User\Controllers;
 
 use Phalcon\Tag;
 use Phalcon\Mvc\View;
 use Phalcon\Mvc\Model\Criteria;
 use Phalcon\Paginator\Adapter\Model as Paginator;
-use Qaytmaydi\User\Models\Users;
-use Qaytmaydi\User\Models\PasswordChanges;
-use Qaytmaydi\User\Forms\UsersForm;
-use Qaytmaydi\User\Forms\ChangePasswordForm;
+use DragonPHP\User\Models\Users;
+use DragonPHP\User\Models\PasswordChanges;
+use DragonPHP\User\Forms\UsersForm;
+use DragonPHP\User\Forms\ChangePasswordForm;
 
 /**
  * Vokuro\Controllers\UsersController
@@ -55,7 +55,7 @@ class UsersController extends ControllerBase
 
         if ($this->request->isPost()) {
 
-            $query = Criteria::fromInput($this->di, 'Qaytmaydi\User\Models\Users', $this->request->getPost());
+            $query = Criteria::fromInput($this->di, 'DragonPHP\User\Models\Users', $this->request->getPost());
             $this->persistent->searchParams = $query->getParams();
 
         } else {

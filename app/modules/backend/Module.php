@@ -1,9 +1,9 @@
 <?php
 /*
 +------------------------------------------------------------------------+
-| Qaytmaydi Website                                                      |
+| DragonPHP Website                                                      |
 +------------------------------------------------------------------------+
-| Copyright (c) 2016-2017 Qaytmaydi Team (https://www.qaytmaydi.com)      |
+| Copyright (c) 2016-2017 DragonPHP Team (https://www.qaytmaydi.com)      |
 +------------------------------------------------------------------------+
 | This source file is subject to the New BSD License that is bundled     |
 | with this package in the file LICENSE.txt.                             |
@@ -16,7 +16,7 @@
 +------------------------------------------------------------------------+
 */
 
-namespace Qaytmaydi\Backend;
+namespace DragonPHP\Backend;
 
 use Phalcon\DiInterface;
 use Phalcon\Loader;
@@ -24,7 +24,7 @@ use Phalcon\Mvc\View;
 use Phalcon\Mvc\View\Engine\Php as PhpEngine;
 use Phalcon\Mvc\ModuleDefinitionInterface;
 use Phalcon\Config;
-use Qaytmaydi\Backend\Library\Auth\Auth;
+use DragonPHP\Backend\Library\Auth\Auth;
 
 use Phalcon\Logger;
 use Phalcon\Events\Event;
@@ -45,11 +45,11 @@ class Module implements ModuleDefinitionInterface
         $loader = new Loader();
 
         $loader->registerNamespaces([
-        'Qaytmaydi\Backend\Controllers' => __DIR__ . '/controllers/',
-        'Qaytmaydi\Backend\Listeners'   => __DIR__ . '/listeners/',
-        'Qaytmaydi\Backend\Forms'       => __DIR__ . '/forms/',
-        'Qaytmaydi\Backend\Library'     => __DIR__ . '/library/',
-        'Qaytmaydi\Backend\Models'      => __DIR__ . '/models/'
+        'DragonPHP\Backend\Controllers' => __DIR__ . '/controllers/',
+        'DragonPHP\Backend\Listeners'   => __DIR__ . '/listeners/',
+        'DragonPHP\Backend\Forms'       => __DIR__ . '/forms/',
+        'DragonPHP\Backend\Library'     => __DIR__ . '/library/',
+        'DragonPHP\Backend\Models'      => __DIR__ . '/models/'
         ]);
 
         $loader->register();

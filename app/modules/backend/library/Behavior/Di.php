@@ -1,9 +1,9 @@
 <?php
 /*
   +------------------------------------------------------------------------+
-  | Qaytmaydi Website                                                      |
+  | DragonPHP Website                                                      |
   +------------------------------------------------------------------------+
-  | Copyright (c) 2016-2017 Qaytmaydi Team (https://www.qaytmaydi.com)      |
+  | Copyright (c) 2016-2017 DragonPHP Team (https://www.qaytmaydi.com)      |
   +------------------------------------------------------------------------+
   | This source file is subject to the New BSD License that is bundled     |
   | with this package in the file LICENSE.txt.                             |
@@ -16,13 +16,13 @@
   +------------------------------------------------------------------------+
 */
 
-namespace Qaytmaydi\Backend\Library\Behavior;
+namespace DragonPHP\Backend\Library\Behavior;
 
 use Phalcon\Di as PhD;
 use Phalcon\DiInterface;
 
 /**
- * \Qaytmaydi\Backend\Library\Behavior\Di
+ * \DragonPHP\Backend\Library\Behavior\Di
  *
  * Dependency Injection Trait.
  * It should be used for classes which do not extend Injectable
@@ -33,7 +33,7 @@ use Phalcon\DiInterface;
  *     // Some logic
  * }
  *
- * use Qaytmaydi\Common\Library\Behavior\Di as DiBehavior;
+ * use DragonPHP\Common\Library\Behavior\Di as DiBehavior;
  *
  * class B extends A {
  *     use DiBehavior {
@@ -76,7 +76,7 @@ use Phalcon\DiInterface;
  * @method \Phalcon\Logger|\Phalcon\Logger\AdapterInterface getLogger(mixed $params = null)
  * @method \Phalcon\Http\Request|\Phalcon\Http\RequestInterface getRequest(mixed $params = null)
  *
- * @package Qaytmaydi\Common\Library\Behavior
+ * @package DragonPHP\Common\Library\Behavior
  */
 trait Di
 {
@@ -123,7 +123,7 @@ trait Di
      * Trying to obtain the dependence from the Dependency Injection Container.
      *
      * <code>
-     * use Qaytmaydi\Common\Library\Behavior\Di;
+     * use DragonPHP\Common\Library\Behavior\Di;
      *
      * class A {
      *     // Some logic

@@ -7,7 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
     <meta name="renderer" content="webkit">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Qaytmaydi User</title>
+    <title>DragonPHP User</title>
     <meta name="description" content="qaytmaydi">
     <meta name="keywords" content="loser, hub">
     <meta name="author" content="qaytmaydi">

@@ -1,23 +1,23 @@
 <?php
 /**
- * Qaytmaydi : Delightfully simple forum software
+ * DragonPHP : Delightfully simple forum software
  *
  * Licensed under The GNU License
  * For full copyright and license information, please see the LICENSE.txt
  * Redistributions of files must retain the above copyright notice.
  *
- * @link    http://Qaytmaydi.com Qaytmaydi Project
+ * @link    http://DragonPHP.com DragonPHP Project
  * @since   1.0.0
  * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
  */
-namespace Qaytmaydi\Cli\Tasks;
+namespace DragonPHP\Cli\Tasks;
 
 use Phalcon\CLI\Task;
-use Qaytmaydi\Cli\Library\Output;
-use Qaytmaydi\Databases\UsersSeeder;
-use Qaytmaydi\Databases\PostsSeeder;
-use Qaytmaydi\Databases\TagsSeeder;
-use Qaytmaydi\Databases\PostsTagsSeeder;
+use DragonPHP\Cli\Library\Output;
+use DragonPHP\Databases\UsersSeeder;
+use DragonPHP\Databases\PostsSeeder;
+use DragonPHP\Databases\TagsSeeder;
+use DragonPHP\Databases\PostsTagsSeeder;
 
 /**
  * Class DatabaseSeedingTask.

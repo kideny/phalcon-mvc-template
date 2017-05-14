@@ -7,6 +7,6 @@ use Phalcon\Cli\Dispatcher;
 */
 $di->setShared('dispatcher', function() {
     $dispatcher = new Dispatcher();
-    $dispatcher->setDefaultNamespace('Qaytmaydi\Cli\Tasks');
+    $dispatcher->setDefaultNamespace('DragonPHP\Cli\Tasks');
     return $dispatcher;
 });

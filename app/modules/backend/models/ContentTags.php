@@ -1,9 +1,9 @@
 <?php
 /*
 +------------------------------------------------------------------------+
-| Qaytmaydi Website                                                      |
+| DragonPHP Website                                                      |
 +------------------------------------------------------------------------+
-| Copyright (c) 2016-2017 Qaytmaydi Team (https://www.qaytmaydi.com)      |
+| Copyright (c) 2016-2017 DragonPHP Team (https://www.qaytmaydi.com)      |
 +------------------------------------------------------------------------+
 | This source file is subject to the New BSD License that is bundled     |
 | with this package in the file LICENSE.txt.                             |
@@ -16,7 +16,7 @@
 +------------------------------------------------------------------------+
 */
 
-namespace Qaytmaydi\Backend\Models;
+namespace DragonPHP\Backend\Models;
 
 class ContentTags extends ModelBase
 {

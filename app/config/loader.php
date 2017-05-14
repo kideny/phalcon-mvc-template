@@ -9,24 +9,24 @@ $loader = new Loader();
  */
 $loader->registerNamespaces([
     'Phalcon'                       =>     BASE_PATH .'/vendor/phalcon/incubator/Library/Phalcon/',
-    'Qaytmaydi\Frontend\Forms'       =>     APP_PATH . '/modules/frontend/forms/',
-    'Qaytmaydi\Frontend\Models'      =>     APP_PATH . '/modules/frontend/models/',
-    'Qaytmaydi\Backend\Library'      =>     APP_PATH . '/modules/backend/library/',
-    'Qaytmaydi\Backend\Listeners'    =>     APP_PATH . '/modules/backend/listeners/',
-    'Qaytmaydi\Backend\Models'       =>     APP_PATH . '/modules/backend/models/',
-    'Qaytmaydi\Backend'              =>     APP_PATH . '/modules/backend/',
-    'Qaytmaydi\User'                 =>     APP_PATH . '/modules/user/',
-    'Qaytmaydi\Cli'                  =>     APP_PATH . '/modules/cli/'
+    'DragonPHP\Frontend\Forms'       =>     APP_PATH . '/modules/frontend/forms/',
+    'DragonPHP\Frontend\Models'      =>     APP_PATH . '/modules/frontend/models/',
+    'DragonPHP\Backend\Library'      =>     APP_PATH . '/modules/backend/library/',
+    'DragonPHP\Backend\Listeners'    =>     APP_PATH . '/modules/backend/listeners/',
+    'DragonPHP\Backend\Models'       =>     APP_PATH . '/modules/backend/models/',
+    'DragonPHP\Backend'              =>     APP_PATH . '/modules/backend/',
+    'DragonPHP\User'                 =>     APP_PATH . '/modules/user/',
+    'DragonPHP\Cli'                  =>     APP_PATH . '/modules/cli/'
 ]);
 
 /**
  * Register module classes
  */
 $loader->registerClasses([
-    'Qaytmaydi\Frontend\Module' => APP_PATH . '/modules/frontend/Module.php',
-    'Qaytmaydi\Backend\Module'  => APP_PATH . '/modules/backend/Module.php',
-    'Qaytmaydi\User\Module'     => APP_PATH . '/modules/user/Module.php',
-    'Qaytmaydi\Cli\Module'      => APP_PATH . '/modules/cli/Module.php'
+    'DragonPHP\Frontend\Module' => APP_PATH . '/modules/frontend/Module.php',
+    'DragonPHP\Backend\Module'  => APP_PATH . '/modules/backend/Module.php',
+    'DragonPHP\User\Module'     => APP_PATH . '/modules/user/Module.php',
+    'DragonPHP\Cli\Module'      => APP_PATH . '/modules/cli/Module.php'
 ]);
 
 $loader->register();

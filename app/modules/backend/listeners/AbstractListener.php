@@ -2,9 +2,9 @@
 
 /*
 +------------------------------------------------------------------------+
-| Qaytmaydi                                                             |
+| DragonPHP                                                             |
 +------------------------------------------------------------------------+
-| Copyright (c) 2013-2016 Qaytmaydi Team and contributors                  |
+| Copyright (c) 2013-2016 DragonPHP Team and contributors                  |
 +------------------------------------------------------------------------+
 | This source file is subject to the New BSD License that is bundled     |
 | with this package in the file LICENSE.txt.                             |
@@ -15,15 +15,15 @@
 +------------------------------------------------------------------------+
 */
 
-namespace Qaytmaydi\Backend\Listener;
+namespace DragonPHP\Backend\Listener;
 
 use Phalcon\DiInterface;
 use Phalcon\Mvc\User\Component;
 
 /**
-* Qaytmaydi\Listener\AbstractListener
+* DragonPHP\Listener\AbstractListener
 *
-* @package Qaytmaydi\Listener
+* @package DragonPHP\Listener
 */
 class AbstractListener extends Component
 {

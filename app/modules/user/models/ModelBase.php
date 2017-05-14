@@ -10,7 +10,7 @@
 * @since   1.0.0
 * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 */
-namespace Qaytmaydi\User\Models;
+namespace DragonPHP\User\Models;
 
 use Phalcon\Mvc\Model;
 use Phalcon\DI\FactoryDefault;

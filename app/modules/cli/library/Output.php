@@ -1,6 +1,6 @@
 <?php
 
-namespace Qaytmaydi\Cli\Library;
+namespace DragonPHP\Cli\Library;
 
 class Output
 {

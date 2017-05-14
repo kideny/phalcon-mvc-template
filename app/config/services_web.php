@@ -15,7 +15,7 @@ $di->setShared('router', function () {
     $router = new Router();
 
     $router->setDefaultModule('frontend');
-    $router->setDefaultNamespace('Qaytmaydi\Frontend\Controllers');
+    $router->setDefaultNamespace('DragonPHP\Frontend\Controllers');
 
     return $router;
 });
@@ -59,6 +59,6 @@ $di->set('flash', function () {
 */
 $di->setShared('dispatcher', function() {
     $dispatcher = new Dispatcher();
-    $dispatcher->setDefaultNamespace('Qaytmaydi\Frontend\Controllers');
+    $dispatcher->setDefaultNamespace('DragonPHP\Frontend\Controllers');
     return $dispatcher;
 });

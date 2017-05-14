@@ -1,9 +1,9 @@
 <?php
 /*
 +------------------------------------------------------------------------+
-| Qaytmaydi Website                                                      |
+| DragonPHP Website                                                      |
 +------------------------------------------------------------------------+
-| Copyright (c) 2016-2017 Qaytmaydi Team (https://www.qaytmaydi.com)      |
+| Copyright (c) 2016-2017 DragonPHP Team (https://www.qaytmaydi.com)      |
 +------------------------------------------------------------------------+
 | This source file is subject to the New BSD License that is bundled     |
 | with this package in the file LICENSE.txt.                             |
@@ -16,11 +16,11 @@
 +------------------------------------------------------------------------+
 */
 
-namespace Qaytmaydi\Frontend\Controllers;
+namespace DragonPHP\Frontend\Controllers;
 
-use Qaytmaydi\Frontend\Forms\SignUpForm;
-use Qaytmaydi\Frontend\Forms\LoginForm;
-use Qaytmaydi\Frontend\Models\Users;
+use DragonPHP\Frontend\Forms\SignUpForm;
+use DragonPHP\Frontend\Forms\LoginForm;
+use DragonPHP\Frontend\Models\Users;
 
 class AccountController extends ControllerBase
 {

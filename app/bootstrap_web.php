@@ -47,19 +47,19 @@ try {
      */
     $application->registerModules([
         'frontend' => [
-            'className' => 'Qaytmaydi\Frontend\Module',
+            'className' => 'DragonPHP\Frontend\Module',
             'path' => __DIR__ . '/modules/frontend/Module.php',
         ],
         'backend' => [
-            'className' => 'Qaytmaydi\Backend\Module',
+            'className' => 'DragonPHP\Backend\Module',
             'path' => __DIR__ . '/modules/backend/Module.php',
         ],
         'user' => [
-            'className' => 'Qaytmaydi\User\Module',
+            'className' => 'DragonPHP\User\Module',
             'path' => __DIR__ . '/modules/user/Module.php',
         ],
         'cli' => [
-            'className' => 'Qaytmaydi\Cli\Module',
+            'className' => 'DragonPHP\Cli\Module',
             'path' => __DIR__ . '/modules/Cli/Module.php',
         ],
     ]);

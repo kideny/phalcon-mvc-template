@@ -1,9 +1,9 @@
 <?php
 /*
 +------------------------------------------------------------------------+
-| Qaytmaydi Website                                                      |
+| DragonPHP Website                                                      |
 +------------------------------------------------------------------------+
-| Copyright (c) 2016-2017 Qaytmaydi Team (https://www.qaytmaydi.com)      |
+| Copyright (c) 2016-2017 DragonPHP Team (https://www.qaytmaydi.com)      |
 +------------------------------------------------------------------------+
 | This source file is subject to the New BSD License that is bundled     |
 | with this package in the file LICENSE.txt.                             |
@@ -16,7 +16,7 @@
 +------------------------------------------------------------------------+
 */
 
-namespace Qaytmaydi\Frontend;
+namespace DragonPHP\Frontend;
 
 use Phalcon\DiInterface;
 use Phalcon\Loader;
@@ -24,7 +24,7 @@ use Phalcon\Mvc\View;
 use Phalcon\Mvc\View\Engine\Php as PhpEngine;
 use Phalcon\Mvc\ModuleDefinitionInterface;
 use Phalcon\Config;
-use Qaytmaydi\Frontend\Library\Auth\Auth;
+use DragonPHP\Frontend\Library\Auth\Auth;
 
 class Module implements ModuleDefinitionInterface
 {
@@ -38,11 +38,11 @@ class Module implements ModuleDefinitionInterface
         $loader = new Loader();
 
         $loader->registerNamespaces([
-            'Qaytmaydi\Frontend\Controllers' => __DIR__ . '/controllers/',
-            'Qaytmaydi\Frontend\Forms'       => __DIR__ . '/forms/',
-            'Qaytmaydi\Frontend\Library'     => __DIR__ . '/library/',
-            'Qaytmaydi\Frontend\Models'      => __DIR__ . '/models/',
-            'Qaytmaydi\Frontend\Listeners'   => __DIR__ . '/listeners/'
+            'DragonPHP\Frontend\Controllers' => __DIR__ . '/controllers/',
+            'DragonPHP\Frontend\Forms'       => __DIR__ . '/forms/',
+            'DragonPHP\Frontend\Library'     => __DIR__ . '/library/',
+            'DragonPHP\Frontend\Models'      => __DIR__ . '/models/',
+            'DragonPHP\Frontend\Listeners'   => __DIR__ . '/listeners/'
         ]);
 
         $loader->register();

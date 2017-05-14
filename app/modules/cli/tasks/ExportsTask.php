@@ -1,24 +1,24 @@
 <?php
 /**
- * Qaytmaydi : Delightfully simple forum software
+ * DragonPHP : Delightfully simple forum software
  *
  * Licensed under The GNU License
  * For full copyright and license information, please see the LICENSE.txt
  * Redistributions of files must retain the above copyright notice.
  *
- * @link    http://Qaytmaydi.com Qaytmaydi Project
+ * @link    http://DragonPHP.com DragonPHP Project
  * @since   1.0.0
  * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
  */
-namespace Qaytmaydi\Cli\Tasks;
+namespace DragonPHP\Cli\Tasks;
 
 use Phalcon\CLI\Task;
-use Qaytmaydi\Cli\Library\Output;
+use DragonPHP\Cli\Library\Output;
 
 class ExportsTask extends Task
 {
     /**
-     * The task exports database Qaytmaydi
+     * The task exports database DragonPHP
      *
      * {cmd}
      *    php cli Exports
@@ -40,7 +40,7 @@ class ExportsTask extends Task
         $cmd  = "mysqldump -u $username --password=$password --host=$host $database > $name.sql";
         shell_exec($cmd);
 
-        Output::stdout('Qaytmaydi exports your database successfully');
+        Output::stdout('DragonPHP exports your database successfully');
         Output::stdout('======================================================');
     }
 }

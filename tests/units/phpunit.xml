@@ -10,7 +10,7 @@
          processIsolation="false"
          stopOnFailure="false"
          syntaxCheck="true">
-    <testsuite name="Qaytmaydi - Testsuite">
+    <testsuite name="DragonPHP - Testsuite">
         <directory>./</directory>
     </testsuite>
 </phpunit>

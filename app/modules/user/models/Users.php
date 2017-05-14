@@ -2,9 +2,9 @@
 
 /*
 +------------------------------------------------------------------------+
-| Qaytmaydi                                                             |
+| DragonPHP                                                             |
 +------------------------------------------------------------------------+
-| Copyright (c) 2016-2017 Qaytmaydi Team and contributors                  |
+| Copyright (c) 2016-2017 DragonPHP Team and contributors                  |
 +------------------------------------------------------------------------+
 | This source file is subject to the New BSD License that is bundled     |
 | with this package in the file LICENSE.txt.                             |
@@ -15,7 +15,7 @@
 +------------------------------------------------------------------------+
 */
 
-namespace Qaytmaydi\User\Models;
+namespace DragonPHP\User\Models;
 
 use Phalcon\Validation;
 use Phalcon\Mvc\Model;
@@ -41,7 +41,7 @@ use Phalcon\Validation\Validator\Uniqueness;
 * @method static Users findFirstByAccessToken(string $token)
 * @method static Users[] find($parameters=null)
 *
-* @package Qaytmaydi\User\Model
+* @package DragonPHP\User\Model
 */
 class Users extends Model
 {

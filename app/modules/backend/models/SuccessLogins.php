@@ -1,9 +1,9 @@
 <?php
 /*
 +------------------------------------------------------------------------+
-| Qaytmaydi                                                             |
+| DragonPHP                                                             |
 +------------------------------------------------------------------------+
-| Copyright (c) 2016-2017 Qaytmaydi Team and contributors                  |
+| Copyright (c) 2016-2017 DragonPHP Team and contributors                  |
 +------------------------------------------------------------------------+
 | This source file is subject to the New BSD License that is bundled     |
 | with this package in the file LICENSE.txt.                             |
@@ -13,7 +13,7 @@
 | to license@qaytmaydi.com so we can send you a copy immediately.       |
 +------------------------------------------------------------------------+
 */
-namespace Qaytmaydi\Backend\Models;
+namespace DragonPHP\Backend\Models;
 
 use Phalcon\Mvc\Model\Behavior\Timestampable;
 

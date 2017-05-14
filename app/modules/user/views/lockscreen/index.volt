@@ -1,7 +1,7 @@
 <!-- Automatic element centering -->
 <div class="lockscreen-wrapper">
     <div class="lockscreen-logo">
-        <a href="/backend"><b>Qaytmaydi</b>Admin</a>
+        <a href="/backend"><b>DragonPHP</b>Admin</a>
     </div>
     <!-- User name -->
     <div class="lockscreen-name">Frank Yuan</div>
@@ -31,7 +31,7 @@
         <a href="/backend/session/login">Or sign in as a different user</a>
     </div>
     <div class="lockscreen-footer text-center">
-        Copyright &copy; 2016-2017 <b><a href="http://www.qaytmaydi.cn" title="qaytmaydi" class="text-black">Qaytmaydi Studio</a></b><br>        All rights reserved
+        Copyright &copy; 2016-2017 <b><a href="http://www.qaytmaydi.cn" title="qaytmaydi" class="text-black">DragonPHP Studio</a></b><br>        All rights reserved
     </div>
 </div>
 <!-- /.center -->

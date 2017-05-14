@@ -1,5 +1,5 @@
 <?php
-namespace Qaytmaydi\Cli\Tasks;
+namespace DragonPHP\Cli\Tasks;
 
 class VersionTask extends \Phalcon\Cli\Task
 {

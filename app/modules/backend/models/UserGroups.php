@@ -2,9 +2,9 @@
 
 /*
 +------------------------------------------------------------------------+
-| Qaytmaydi                                                             |
+| DragonPHP                                                             |
 +------------------------------------------------------------------------+
-| Copyright (c) 2016-2017 Qaytmaydi Team and contributors                  |
+| Copyright (c) 2016-2017 DragonPHP Team and contributors                  |
 +------------------------------------------------------------------------+
 | This source file is subject to the New BSD License that is bundled     |
 | with this package in the file LICENSE.txt.                             |
@@ -15,7 +15,7 @@
 +------------------------------------------------------------------------+
 */
 
-namespace Qaytmaydi\Backend\Models;
+namespace DragonPHP\Backend\Models;
 
 use Phalcon\Validation;
 use Phalcon\Mvc\Model\Behavior\Timestampable;
@@ -38,7 +38,7 @@ use Phalcon\Validation\Validator\Uniqueness;
 * @method static Users findFirstByAccessToken(string $token)
 * @method static Users[] find($parameters=null)
 *
-* @package Qaytmaydi\Backend\Model
+* @package DragonPHP\Backend\Model
 */
 class UserGroups extends ModelBase
 {
@@ -96,7 +96,7 @@ class UserGroups extends ModelBase
 
         $this->hasMany(
             'id',
-            'Qaytmaydi\Backend\Models\Usersgroups',
+            'DragonPHP\Backend\Models\Usersgroups',
             'user_group_id',
             [
                 'alias' => 'userGroupId',

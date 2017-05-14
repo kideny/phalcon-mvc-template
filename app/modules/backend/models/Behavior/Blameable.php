@@ -1,9 +1,9 @@
 <?php
 /*
 +------------------------------------------------------------------------+
-| Qaytmaydi Website                                                      |
+| DragonPHP Website                                                      |
 +------------------------------------------------------------------------+
-| Copyright (c) 2016-2017 Qaytmaydi Team (https://www.qaytmaydi.com)      |
+| Copyright (c) 2016-2017 DragonPHP Team (https://www.qaytmaydi.com)      |
 +------------------------------------------------------------------------+
 | This source file is subject to the New BSD License that is bundled     |
 | with this package in the file LICENSE.txt.                             |
@@ -16,20 +16,20 @@
 +------------------------------------------------------------------------+
 */
 
-namespace Qaytmaydi\Backend\Models\Behavior;
+namespace DragonPHP\Backend\Models\Behavior;
 
-use Qaytmaydi\Backend\Models\Audit;
+use DragonPHP\Backend\Models\Audit;
 use Phalcon\Security\Random;
 use Phalcon\Mvc\ModelInterface;
 use Phalcon\Mvc\Model\Behavior;
-use Qaytmaydi\Backend\Models\AuditDetail;
+use DragonPHP\Backend\Models\AuditDetail;
 use Phalcon\Mvc\Model\BehaviorInterface;
-use Qaytmaydi\Common\Library\Behavior\Di as DiBehavior;
+use DragonPHP\Common\Library\Behavior\Di as DiBehavior;
 
 /**
-* \Qaytmaydi\Backend\Models\Behavior\Blameable
+* \DragonPHP\Backend\Models\Behavior\Blameable
 *
-* @package Qaytmaydi\Models\Behavior
+* @package DragonPHP\Models\Behavior
 */
 class Blameable extends Behavior implements BehaviorInterface
 {
@@ -90,7 +90,7 @@ class Blameable extends Behavior implements BehaviorInterface
             return null;
         }
 
-        /** @var \Qaytmaydi\Auth\Auth $auth */
+        /** @var \DragonPHP\Auth\Auth $auth */
         $auth = $this->getDI()->getShared('auth');
 
         if ($auth->isAuthorizedVisitor()) {

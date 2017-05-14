@@ -1,7 +1,7 @@
 
 <div class="login-box">
     <div class="login-logo">
-        <a href="../../index2.html"><b>Qaytmaydi</b>&nbsp;&nbsp;Admin</a>
+        <a href="../../index2.html"><b>DragonPHP</b>&nbsp;&nbsp;Admin</a>
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">

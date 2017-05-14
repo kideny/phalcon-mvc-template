@@ -41,7 +41,7 @@ $console = new ConsoleApp($di);
  * Register console modules
  */
 $console->registerModules([
-    'cli' => ['className' => 'Qaytmaydi\Cli\Module']
+    'cli' => ['className' => 'DragonPHP\Cli\Module']
 ]);
 
 /**

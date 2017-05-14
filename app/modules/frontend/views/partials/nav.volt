@@ -1,5 +1,5 @@
 <nav class="navbar navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">Qaytmaydi</a>
+    <a class="navbar-brand" href="#">DragonPHP</a>
     <ul class="nav navbar-nav">
         <li class="nav-item active">
             <a class="nav-link" href="#">

@@ -1,4 +1,4 @@
-Qaytmaydi
+DragonPHP
 
 Phalcon is a web framework delivered as a C extension providing high performance and lower resource consumption.
 
@@ -36,7 +36,7 @@ cat schemas/qaytmaydi.sql | mysql -u root qaytmaydi
 Also you can override application config by creating app/config/config.php (already gitignored).
 Installing Dependencies via Composer
 
-Qaytmaydi's dependencies must be installed using Composer. Install composer in a common location or in your project:
+DragonPHP's dependencies must be installed using Composer. Install composer in a common location or in your project:
 
 curl -s http://getcomposer.org/installer | php
 
@@ -47,7 +47,7 @@ php composer.phar install
 
 Improving this Sample
 
-Phalcon is an open source project and a volunteer effort. Qaytmaydi does not have human resources fully dedicated to the mainteniance of this software. If you want something to be improved or you want a new feature please submit a Pull Request.
+Phalcon is an open source project and a volunteer effort. DragonPHP does not have human resources fully dedicated to the mainteniance of this software. If you want something to be improved or you want a new feature please submit a Pull Request.
 License
 
-Qaytmaydi is open-sourced software licensed under the New MIT License.
+DragonPHP is open-sourced software licensed under the New MIT License.

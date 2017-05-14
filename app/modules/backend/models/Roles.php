@@ -1,9 +1,9 @@
 <?php
 /*
 +------------------------------------------------------------------------+
-| Qaytmaydi                                                             |
+| DragonPHP                                                             |
 +------------------------------------------------------------------------+
-| Copyright (c) 2016-2017 Qaytmaydi Team and contributors                  |
+| Copyright (c) 2016-2017 DragonPHP Team and contributors                  |
 +------------------------------------------------------------------------+
 | This source file is subject to the New BSD License that is bundled     |
 | with this package in the file LICENSE.txt.                             |
@@ -14,12 +14,12 @@
 +------------------------------------------------------------------------+
 */
 
-namespace Qaytmaydi\Backend\Models;
+namespace DragonPHP\Backend\Models;
 
 use Phalcon\Mvc\Model\Resultset\Simple;
 
 /**
-* Qaytmaydi\Models\Roles
+* DragonPHP\Models\Roles
 *
 * @property int    $id
 * @property string $name
@@ -34,7 +34,7 @@ use Phalcon\Mvc\Model\Resultset\Simple;
 * @method static Roles|false findFirst($params = null)
 * @method static Roles|false findFirstByIsDefault(bool $flag)
 *
-* @package Qaytmaydi\Models
+* @package DragonPHP\Models
 */
 class Roles extends Model
 {

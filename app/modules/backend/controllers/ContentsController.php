@@ -1,9 +1,9 @@
 <?php
 /*
   +------------------------------------------------------------------------+
-  | Qaytmaydi Website                                                      |
+  | DragonPHP Website                                                      |
   +------------------------------------------------------------------------+
-  | Copyright (c) 2016-2017 Qaytmaydi Team (https://www.qaytmaydi.com)      |
+  | Copyright (c) 2016-2017 DragonPHP Team (https://www.qaytmaydi.com)      |
   +------------------------------------------------------------------------+
   | This source file is subject to the New BSD License that is bundled     |
   | with this package in the file LICENSE.txt.                             |
@@ -16,15 +16,15 @@
   +------------------------------------------------------------------------+
 */
 
-namespace Qaytmaydi\Backend\Controllers;
+namespace DragonPHP\Backend\Controllers;
 
 use Phalcon\Paginator\Adapter\Model as Paginator;
-use Qaytmaydi\Frontend\Forms\SignUpForm;
-use Qaytmaydi\Frontend\Forms\UsersForm;
-use Qaytmaydi\Frontend\Models\Users;
+use DragonPHP\Frontend\Forms\SignUpForm;
+use DragonPHP\Frontend\Forms\UsersForm;
+use DragonPHP\Frontend\Models\Users;
 
 /**
- * Qaytmaydi\Backend\Controllers\MembersController
+ * DragonPHP\Backend\Controllers\MembersController
  * CRUD to manage Members
  */
 class MembersController extends ControllerBase

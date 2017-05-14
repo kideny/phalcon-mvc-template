@@ -1,9 +1,9 @@
 <?php
 /*
   +------------------------------------------------------------------------+
-  | Qaytmaydi Website                                                      |
+  | DragonPHP Website                                                      |
   +------------------------------------------------------------------------+
-  | Copyright (c) 2016-2017 Qaytmaydi Team (https://www.qaytmaydi.com)      |
+  | Copyright (c) 2016-2017 DragonPHP Team (https://www.qaytmaydi.com)      |
   +------------------------------------------------------------------------+
   | This source file is subject to the New BSD License that is bundled     |
   | with this package in the file LICENSE.txt.                             |
@@ -16,12 +16,12 @@
   +------------------------------------------------------------------------+
 */
 
-namespace Qaytmaydi\Backend\Library\Auth;
+namespace DragonPHP\Backend\Library\Auth;
 
-use Qaytmaydi\Backend\Models\Users;
+use DragonPHP\Backend\Models\Users;
 use Phalcon\Mvc\User\Component;
-use Qaytmaydi\Backend\Models\SuccessLogins;
-use Qaytmaydi\Backend\Models\RememberTokens;
+use DragonPHP\Backend\Models\SuccessLogins;
+use DragonPHP\Backend\Models\RememberTokens;
 use Phalcon\Logger;
 use Phalcon\Logger\Adapter\File as FileAdapter;
 
@@ -92,7 +92,7 @@ class Auth extends Component
     /**
      * Creates the remember me environment settings the related cookies and generating tokens
      *
-     * @param \Qaytmaydi\Backend\Models\Users $user
+     * @param \DragonPHP\Backend\Models\Users $user
      * @throws Exception
      */
     public function saveSuccessLogin($user)
@@ -160,7 +160,7 @@ class Auth extends Component
     /**
      * Creates the remember me environment settings the related cookies and generating tokens
      *
-     * @param \Qaytmaydi\Backend\Models\Users $user
+     * @param \DragonPHP\Backend\Models\Users $user
      */
     public function createRememberEnvironment(Users $user)
     {
@@ -257,7 +257,7 @@ class Auth extends Component
     /**
      * Checks if the user is banned/inactive/suspended
      *
-     * @param \Qaytmaydi\Backend\Models\Users $user
+     * @param \DragonPHP\Backend\Models\Users $user
      * @throws Exception
      */
     public function checkUserFlags(Users $user)
@@ -342,7 +342,7 @@ class Auth extends Component
     /**
      * Get the entity related to user in the active identity
      *
-     * @return \Qaytmaydi\Backend\Models\Users
+     * @return \DragonPHP\Backend\Models\Users
      * @throws Exception
      */
     public function getUser()

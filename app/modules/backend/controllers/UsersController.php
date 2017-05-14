@@ -1,9 +1,9 @@
 <?php
 /*
 +------------------------------------------------------------------------+
-| Qaytmaydi Website                                                      |
+| DragonPHP Website                                                      |
 +------------------------------------------------------------------------+
-| Copyright (c) 2016-2017 Qaytmaydi Team (https://www.qaytmaydi.com)      |
+| Copyright (c) 2016-2017 DragonPHP Team (https://www.qaytmaydi.com)      |
 +------------------------------------------------------------------------+
 | This source file is subject to the New BSD License that is bundled     |
 | with this package in the file LICENSE.txt.                             |
@@ -16,23 +16,23 @@
 +------------------------------------------------------------------------+
 */
 
-namespace Qaytmaydi\Backend\Controllers;
+namespace DragonPHP\Backend\Controllers;
 
 use Phalcon\Tag;
 use Phalcon\Mvc\View;
 use Phalcon\Mvc\Model\Criteria;
 use Phalcon\Paginator\Adapter\Model as Paginator;
-use Qaytmaydi\Backend\Models\Users;
-use Qaytmaydi\Backend\Models\PasswordChanges;
-use Qaytmaydi\Backend\Forms\SignUpForm;
-use Qaytmaydi\Backend\Forms\UsersForm;
-use Qaytmaydi\Backend\Forms\ChangePasswordForm;
+use DragonPHP\Backend\Models\Users;
+use DragonPHP\Backend\Models\PasswordChanges;
+use DragonPHP\Backend\Forms\SignUpForm;
+use DragonPHP\Backend\Forms\UsersForm;
+use DragonPHP\Backend\Forms\ChangePasswordForm;
 
 use Phalcon\Logger;
 use Phalcon\Logger\Adapter\File as FileAdapter;
 
 /**
- * Qaytmaydi\Backend\Controllers\UsersController
+ * DragonPHP\Backend\Controllers\UsersController
  * CRUD to manage users
  */
 class UsersController extends ControllerBase
@@ -79,7 +79,7 @@ class UsersController extends ControllerBase
 
         if ($this->request->isPost()) {
 
-            $query = Criteria::fromInput($this->di, 'Qaytmaydi\Backend\Models\Users', $this->request->getPost());
+            $query = Criteria::fromInput($this->di, 'DragonPHP\Backend\Models\Users', $this->request->getPost());
 
             $this->persistent->searchParams = $query->getParams();
 
