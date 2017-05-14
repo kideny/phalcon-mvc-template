@@ -1,0 +1,58 @@
+[Sun, 14 May 17 07:31:15 +0000][DEBUG] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'backend_users' AND `TABLE_SCHEMA` = DATABASE()
+[Sun, 14 May 17 07:31:15 +0000][DEBUG] DESCRIBE `backend_users`
+[Sun, 14 May 17 07:31:15 +0000][DEBUG] SELECT `backend_users`.`id`, `backend_users`.`first_name`, `backend_users`.`last_name`, `backend_users`.`login_name`, `backend_users`.`email`, `backend_users`.`password`, `backend_users`.`activation_code`, `backend_users`.`persist_code`, `backend_users`.`reset_password_code`, `backend_users`.`permissions`, `backend_users`.`is_activated`, `backend_users`.`activated_at`, `backend_users`.`last_login`, `backend_users`.`created_at`, `backend_users`.`updated_at`, `backend_users`.`is_superuser` FROM `backend_users` LIMIT :APL0 [1]
+[Sun, 14 May 17 07:31:15 +0000][DEBUG] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'backend_success_logins' AND `TABLE_SCHEMA` = DATABASE()
+[Sun, 14 May 17 07:31:15 +0000][DEBUG] DESCRIBE `backend_success_logins`
+[Sun, 14 May 17 07:31:15 +0000][DEBUG] INSERT INTO `backend_success_logins` (`users_id`, `ip_address`, `user_agent`, `created_at`) VALUES (?, ?, ?, ?) [1, 192.168.50.1, Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0, 2017-05-14 07:31:15]
+[Sun, 14 May 17 07:31:15 +0000][DEBUG] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'backend_remember_tokens' AND `TABLE_SCHEMA` = DATABASE()
+[Sun, 14 May 17 07:31:15 +0000][DEBUG] DESCRIBE `backend_remember_tokens`
+[Sun, 14 May 17 07:49:06 +0000][DEBUG] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'backend_users' AND `TABLE_SCHEMA` = DATABASE()
+[Sun, 14 May 17 07:49:06 +0000][DEBUG] DESCRIBE `backend_users`
+[Sun, 14 May 17 07:49:06 +0000][DEBUG] SELECT `backend_users`.`id`, `backend_users`.`first_name`, `backend_users`.`last_name`, `backend_users`.`login_name`, `backend_users`.`email`, `backend_users`.`password`, `backend_users`.`activation_code`, `backend_users`.`persist_code`, `backend_users`.`reset_password_code`, `backend_users`.`permissions`, `backend_users`.`is_activated`, `backend_users`.`activated_at`, `backend_users`.`last_login`, `backend_users`.`created_at`, `backend_users`.`updated_at`, `backend_users`.`is_superuser` FROM `backend_users` LIMIT :APL0 [1]
+[Sun, 14 May 17 07:49:06 +0000][DEBUG] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'backend_success_logins' AND `TABLE_SCHEMA` = DATABASE()
+[Sun, 14 May 17 07:49:06 +0000][DEBUG] DESCRIBE `backend_success_logins`
+[Sun, 14 May 17 07:49:06 +0000][DEBUG] INSERT INTO `backend_success_logins` (`users_id`, `ip_address`, `user_agent`, `created_at`) VALUES (?, ?, ?, ?) [1, 192.168.50.1, Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0, 2017-05-14 07:49:06]
+[Sun, 14 May 17 07:49:06 +0000][DEBUG] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'backend_remember_tokens' AND `TABLE_SCHEMA` = DATABASE()
+[Sun, 14 May 17 07:49:06 +0000][DEBUG] DESCRIBE `backend_remember_tokens`
+[Sun, 14 May 17 07:49:06 +0000][DEBUG] SELECT COUNT(*) "rowcount" FROM `backend_remember_tokens` WHERE `id` = ? AND `users_id` = ? [, 1]
+[Sun, 14 May 17 07:49:06 +0000][DEBUG] INSERT INTO `backend_remember_tokens` (`users_id`, `token`, `user_agent`, `created_at`) VALUES (?, ?, ?, ?) [1, 2da34bef9c24c0111e0263a97acb9d66, Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0, 2017-05-14 07:49:06]
+[Sun, 14 May 17 07:57:08 +0000][DEBUG] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'backend_users' AND `TABLE_SCHEMA` = DATABASE()
+[Sun, 14 May 17 07:57:08 +0000][DEBUG] DESCRIBE `backend_users`
+[Sun, 14 May 17 07:57:08 +0000][DEBUG] SELECT `backend_users`.`id`, `backend_users`.`first_name`, `backend_users`.`last_name`, `backend_users`.`login_name`, `backend_users`.`email`, `backend_users`.`password`, `backend_users`.`activation_code`, `backend_users`.`persist_code`, `backend_users`.`reset_password_code`, `backend_users`.`permissions`, `backend_users`.`is_activated`, `backend_users`.`activated_at`, `backend_users`.`last_login`, `backend_users`.`created_at`, `backend_users`.`updated_at`, `backend_users`.`is_superuser` FROM `backend_users` LIMIT :APL0 [1]
+[Sun, 14 May 17 07:57:08 +0000][DEBUG] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'backend_success_logins' AND `TABLE_SCHEMA` = DATABASE()
+[Sun, 14 May 17 07:57:08 +0000][DEBUG] DESCRIBE `backend_success_logins`
+[Sun, 14 May 17 07:57:08 +0000][DEBUG] INSERT INTO `backend_success_logins` (`users_id`, `ip_address`, `user_agent`, `created_at`) VALUES (?, ?, ?, ?) [1, 192.168.50.1, Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0, 2017-05-14 07:57:08]
+[Sun, 14 May 17 07:57:08 +0000][DEBUG] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'backend_remember_tokens' AND `TABLE_SCHEMA` = DATABASE()
+[Sun, 14 May 17 07:57:08 +0000][DEBUG] DESCRIBE `backend_remember_tokens`
+[Sun, 14 May 17 07:57:08 +0000][DEBUG] SELECT COUNT(*) "rowcount" FROM `backend_remember_tokens` WHERE `id` = ? AND `users_id` = ? [, 1]
+[Sun, 14 May 17 07:57:08 +0000][DEBUG] INSERT INTO `backend_remember_tokens` (`users_id`, `token`, `user_agent`, `created_at`) VALUES (?, ?, ?, ?) [1, 2da34bef9c24c0111e0263a97acb9d66, Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0, 2017-05-14 07:57:08]
+[Sun, 14 May 17 08:02:33 +0000][DEBUG] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'backend_users' AND `TABLE_SCHEMA` = DATABASE()
+[Sun, 14 May 17 08:02:33 +0000][DEBUG] DESCRIBE `backend_users`
+[Sun, 14 May 17 08:02:33 +0000][DEBUG] SELECT `backend_users`.`id`, `backend_users`.`first_name`, `backend_users`.`last_name`, `backend_users`.`login_name`, `backend_users`.`email`, `backend_users`.`password`, `backend_users`.`activation_code`, `backend_users`.`persist_code`, `backend_users`.`reset_password_code`, `backend_users`.`permissions`, `backend_users`.`is_activated`, `backend_users`.`activated_at`, `backend_users`.`last_login`, `backend_users`.`created_at`, `backend_users`.`updated_at`, `backend_users`.`is_superuser` FROM `backend_users` LIMIT :APL0 [1]
+[Sun, 14 May 17 08:02:33 +0000][DEBUG] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'backend_success_logins' AND `TABLE_SCHEMA` = DATABASE()
+[Sun, 14 May 17 08:02:33 +0000][DEBUG] DESCRIBE `backend_success_logins`
+[Sun, 14 May 17 08:02:33 +0000][DEBUG] INSERT INTO `backend_success_logins` (`users_id`, `ip_address`, `user_agent`, `created_at`) VALUES (?, ?, ?, ?) [1, 192.168.50.1, Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0, 2017-05-14 08:02:33]
+[Sun, 14 May 17 08:02:33 +0000][DEBUG] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'backend_remember_tokens' AND `TABLE_SCHEMA` = DATABASE()
+[Sun, 14 May 17 08:02:33 +0000][DEBUG] DESCRIBE `backend_remember_tokens`
+[Sun, 14 May 17 08:02:33 +0000][DEBUG] SELECT COUNT(*) "rowcount" FROM `backend_remember_tokens` WHERE `id` = ? AND `users_id` = ? [, 1]
+[Sun, 14 May 17 08:02:33 +0000][DEBUG] INSERT INTO `backend_remember_tokens` (`users_id`, `token`, `user_agent`, `created_at`) VALUES (?, ?, ?, ?) [1, 2da34bef9c24c0111e0263a97acb9d66, Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0, 2017-05-14 08:02:33]
+[Sun, 14 May 17 08:10:08 +0000][DEBUG] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'backend_users' AND `TABLE_SCHEMA` = DATABASE()
+[Sun, 14 May 17 08:10:08 +0000][DEBUG] DESCRIBE `backend_users`
+[Sun, 14 May 17 08:10:08 +0000][DEBUG] SELECT `backend_users`.`id`, `backend_users`.`first_name`, `backend_users`.`last_name`, `backend_users`.`login_name`, `backend_users`.`email`, `backend_users`.`password`, `backend_users`.`activation_code`, `backend_users`.`persist_code`, `backend_users`.`reset_password_code`, `backend_users`.`permissions`, `backend_users`.`is_activated`, `backend_users`.`activated_at`, `backend_users`.`last_login`, `backend_users`.`created_at`, `backend_users`.`updated_at`, `backend_users`.`is_superuser` FROM `backend_users` LIMIT :APL0 [1]
+[Sun, 14 May 17 08:10:08 +0000][DEBUG] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'backend_success_logins' AND `TABLE_SCHEMA` = DATABASE()
+[Sun, 14 May 17 08:10:08 +0000][DEBUG] DESCRIBE `backend_success_logins`
+[Sun, 14 May 17 08:10:08 +0000][DEBUG] INSERT INTO `backend_success_logins` (`users_id`, `ip_address`, `user_agent`, `created_at`) VALUES (?, ?, ?, ?) [1, 192.168.50.1, Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0, 2017-05-14 08:10:08]
+[Sun, 14 May 17 08:10:08 +0000][DEBUG] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'backend_remember_tokens' AND `TABLE_SCHEMA` = DATABASE()
+[Sun, 14 May 17 08:10:08 +0000][DEBUG] DESCRIBE `backend_remember_tokens`
+[Sun, 14 May 17 08:10:08 +0000][DEBUG] SELECT COUNT(*) "rowcount" FROM `backend_remember_tokens` WHERE `id` = ? AND `users_id` = ? [, 1]
+[Sun, 14 May 17 08:10:08 +0000][DEBUG] INSERT INTO `backend_remember_tokens` (`users_id`, `token`, `user_agent`, `created_at`) VALUES (?, ?, ?, ?) [1, 2da34bef9c24c0111e0263a97acb9d66, Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0, 2017-05-14 08:10:08]
+[Sun, 14 May 17 08:10:18 +0000][DEBUG] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'backend_users' AND `TABLE_SCHEMA` = DATABASE()
+[Sun, 14 May 17 08:10:18 +0000][DEBUG] DESCRIBE `backend_users`
+[Sun, 14 May 17 08:10:18 +0000][DEBUG] SELECT `backend_users`.`id`, `backend_users`.`first_name`, `backend_users`.`last_name`, `backend_users`.`login_name`, `backend_users`.`email`, `backend_users`.`password`, `backend_users`.`activation_code`, `backend_users`.`persist_code`, `backend_users`.`reset_password_code`, `backend_users`.`permissions`, `backend_users`.`is_activated`, `backend_users`.`activated_at`, `backend_users`.`last_login`, `backend_users`.`created_at`, `backend_users`.`updated_at`, `backend_users`.`is_superuser` FROM `backend_users` LIMIT :APL0 [1]
+[Sun, 14 May 17 08:10:18 +0000][DEBUG] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'backend_success_logins' AND `TABLE_SCHEMA` = DATABASE()
+[Sun, 14 May 17 08:10:18 +0000][DEBUG] DESCRIBE `backend_success_logins`
+[Sun, 14 May 17 08:10:18 +0000][DEBUG] INSERT INTO `backend_success_logins` (`users_id`, `ip_address`, `user_agent`, `created_at`) VALUES (?, ?, ?, ?) [1, 192.168.50.1, Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0, 2017-05-14 08:10:18]
+[Sun, 14 May 17 08:10:18 +0000][DEBUG] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'backend_remember_tokens' AND `TABLE_SCHEMA` = DATABASE()
+[Sun, 14 May 17 08:10:18 +0000][DEBUG] DESCRIBE `backend_remember_tokens`
+[Sun, 14 May 17 08:10:18 +0000][DEBUG] SELECT COUNT(*) "rowcount" FROM `backend_remember_tokens` WHERE `id` = ? AND `users_id` = ? [, 1]
+[Sun, 14 May 17 08:10:18 +0000][DEBUG] INSERT INTO `backend_remember_tokens` (`users_id`, `token`, `user_agent`, `created_at`) VALUES (?, ?, ?, ?) [1, 2da34bef9c24c0111e0263a97acb9d66, Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0, 2017-05-14 08:10:18]

@@ -10,7 +10,7 @@
 * @since   1.0.0
 * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 */
-namespace DragonPHP\Frontend\Library\Auth;
+namespace DragonPHP\Library\Auth;
 
 use Phalcon\Mvc\User\Component;
 use DragonPHP\Frontend\Models\Users;

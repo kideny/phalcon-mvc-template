@@ -24,7 +24,7 @@ use Phalcon\Mvc\View;
 use Phalcon\Mvc\View\Engine\Php as PhpEngine;
 use Phalcon\Mvc\ModuleDefinitionInterface;
 use Phalcon\Config;
-use DragonPHP\Backend\Library\Auth\Auth;
+use DragonPHP\Library\Auth\Auth;
 
 use Phalcon\Logger;
 use Phalcon\Events\Event;
@@ -48,7 +48,7 @@ class Module implements ModuleDefinitionInterface
         'DragonPHP\Backend\Controllers' => __DIR__ . '/controllers/',
         'DragonPHP\Backend\Listeners'   => __DIR__ . '/listeners/',
         'DragonPHP\Backend\Forms'       => __DIR__ . '/forms/',
-        'DragonPHP\Backend\Library'     => __DIR__ . '/library/',
+        'DragonPHP\Library'     => __DIR__ . '/library/',
         'DragonPHP\Backend\Models'      => __DIR__ . '/models/'
         ]);
 

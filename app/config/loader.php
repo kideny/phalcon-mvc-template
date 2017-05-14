@@ -11,7 +11,7 @@ $loader->registerNamespaces([
     'Phalcon'                       =>     BASE_PATH .'/vendor/phalcon/incubator/Library/Phalcon/',
     'DragonPHP\Frontend\Forms'       =>     APP_PATH . '/modules/frontend/forms/',
     'DragonPHP\Frontend\Models'      =>     APP_PATH . '/modules/frontend/models/',
-    'DragonPHP\Backend\Library'      =>     APP_PATH . '/modules/backend/library/',
+    'DragonPHP\Library'      =>     APP_PATH . '/modules/backend/library/',
     'DragonPHP\Backend\Listeners'    =>     APP_PATH . '/modules/backend/listeners/',
     'DragonPHP\Backend\Models'       =>     APP_PATH . '/modules/backend/models/',
     'DragonPHP\Backend'              =>     APP_PATH . '/modules/backend/',

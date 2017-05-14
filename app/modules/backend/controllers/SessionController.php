@@ -21,7 +21,7 @@ namespace DragonPHP\Backend\Controllers;
 use Phalcon\Mvc\Controller;
 use Phalcon\Mvc\View;
 use DragonPHP\Backend\Forms\LoginForm;
-use DragonPHP\Backend\Library\Auth\Exception as AuthException;
+use DragonPHP\Library\Auth\Exception as AuthException;
 use DragonPHP\Backend\Models\Users;
 
 use Phalcon\Logger;

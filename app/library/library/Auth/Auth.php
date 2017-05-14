@@ -1,19 +1,19 @@
 <?php
 /**
-* DragonPHP : Delightfully simple forum software
+* Loserhub : Delightfully simple forum software
 *
 * Licensed under The GNU License
 * For full copyright and license information, please see the LICENSE.txt
 * Redistributions of files must retain the above copyright notice.
 *
-* @link    http://DragonPHP.com DragonPHP Project
+* @link    http://Loserhub.com Loserhub Project
 * @since   1.0.0
 * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 */
-namespace DragonPHP\Library\Auth;
+namespace Loserhub\Library\Auth;
 
-use DragonPHP\User\Models\Users;
 use Phalcon\Mvc\User\Component;
+use Loserhub\Frontend\Models\Users;
 
 class Auth extends Component
 {
@@ -26,29 +26,36 @@ class Auth extends Component
      */
     public function check($credentials)
     {
-        // Check if the user exist
-        $user = Users::findFirstByEmail($credentials['email']);
+
+        $user = Users::findFirstByEmail($credentials['email']);                         // Check if the user exist
+
         if ($user == false) {
             $this->registerUserThrottling(0);
             throw new Exception('Wrong email/password combination');
         }
-        // Check the password
-        if (!$this->security->checkHash($credentials['password'], $user->password)) {
+
+        if (!$this->security->checkHash($credentials['password'], $user->password)) {    // Check the password
+
             $this->registerUserThrottling($user->id);
+
             throw new Exception('Wrong email/password combination');
         }
-        // Check if the user was flagged
-        $this->checkUserFlags($user);
-        // Register the successful login
-        $this->saveSuccessLogin($user);
-        // Check if the remember me was selected
-        if (isset($credentials['remember'])) {
+
+        /*
+        $this->checkUserFlags($user);                   // Check if the user was flagged
+
+        $this->saveSuccessLogin($user);                 // Register the successful login
+
+        if (isset($credentials['remember'])) {          // Check if the remember me was selected
             $this->createRememberEnvironment($user);
         }
+        */
+
         $this->session->set('user-identity', [
             'id' => $user->id,
-            'name' => $user->name,
-            'profile' => $user->profile->name
+            'loginName' => $user->loginName,
+            'firstName' => $user->lirstName,
+            'lastName' => $user->lastName,
         ]);
     }
 
@@ -61,11 +68,17 @@ class Auth extends Component
     public function saveSuccessLogin($user)
     {
         $successLogin = new SuccessLogins();
+
         $successLogin->usersId = $user->id;
+
         $successLogin->ipAddress = $this->request->getClientAddress();
+
         $successLogin->userAgent = $this->request->getUserAgent();
+
         if (!$successLogin->save()) {
+
             $messages = $successLogin->getMessages();
+
             throw new Exception($messages[0]);
         }
     }
@@ -79,10 +92,15 @@ class Auth extends Component
     public function registerUserThrottling($userId)
     {
         $failedLogin = new FailedLogins();
+
         $failedLogin->usersId = $userId;
+
         $failedLogin->ipAddress = $this->request->getClientAddress();
+
         $failedLogin->attempted = date('Y-m-d H:i:s');
+
         $failedLogin->save();
+
         $attempts = FailedLogins::count([
             'ipAddress = ?0 AND attempted >= ?1',
             'bind' => [
@@ -90,6 +108,7 @@ class Auth extends Component
                 time() - 3600 * 6
             ]
         ]);
+
         switch ($attempts) {
             case 1:
             case 2:
@@ -113,15 +132,25 @@ class Auth extends Component
     public function createRememberEnvironment(Users $user)
     {
         $userAgent = $this->request->getUserAgent();
+
         $token = md5($user->email . $user->password . $userAgent);
+
         $remember = new RememberTokens();
+
         $remember->usersId = $user->id;
+
         $remember->token = $token;
+
         $remember->userAgent = $userAgent;
+
         if ($remember->save() != false) {
+
             $expire = time() + 86400 * 8;
+
             $this->cookies->set('RMU', $user->id, $expire);
+
             $this->cookies->set('RMT', $token, $expire);
+
         }
     }
 
@@ -143,12 +172,19 @@ class Auth extends Component
     public function loginWithRememberMe()
     {
         $userId = $this->cookies->get('RMU')->getValue();
+
         $cookieToken = $this->cookies->get('RMT')->getValue();
+
         $user = Users::findFirstById($userId);
+
         if ($user) {
+
             $userAgent = $this->request->getUserAgent();
+
             $token = md5($user->email . $user->password . $userAgent);
+
             if ($cookieToken == $token) {
+
                 $remember = RememberTokens::findFirst([
                     'usersId = ?0 AND token = ?1',
                     'bind' => [
@@ -156,27 +192,34 @@ class Auth extends Component
                         $token
                     ]
                 ]);
+
                 if ($remember) {
-                    // Check if the cookie has not expired
-                    if ((time() - (86400 * 8)) < $remember->createdAt) {
-                        // Check if the user was flagged
-                        $this->checkUserFlags($user);
-                        // Register identity
-                        $this->session->set('user-identity', [
+
+                    if ((time() - (86400 * 8)) < $remember->createdAt) {    // Check if the cookie has not expired
+
+                        $this->checkUserFlags($user);                       // Check if the user was flagged
+
+                        $this->session->set('user-identity', [              // Register identity
                             'id' => $user->id,
-                            'name' => $user->name,
-                            'profile' => $user->profile->name
+                            'loginName' => $user->loginName,
+                            'firstName' => $user->firstName,
+                            'lastName' => $user->lastName,
                         ]);
-                        // Register the successful login
-                        $this->saveSuccessLogin($user);
+
+                        $this->saveSuccessLogin($user);                     // Register the successful login
+
                         return $this->response->redirect('users');
                     }
                 }
             }
         }
+
         $this->cookies->get('RMU')->delete();
+
         $this->cookies->get('RMT')->delete();
-        return $this->response->redirect('session/login');
+
+        return $this->response->redirect('frontend/account/signin');
+
     }
 
     /**
@@ -216,7 +259,7 @@ class Auth extends Component
     public function getName()
     {
         $identity = $this->session->get('user-identity');
-        return $identity['name'];
+        return $identity['loginName'];
     }
 
     /**
@@ -242,14 +285,18 @@ class Auth extends Component
     public function authUserById($id)
     {
         $user = Users::findFirstById($id);
+
         if ($user == false) {
             throw new Exception('The user does not exist');
         }
+
         $this->checkUserFlags($user);
+
         $this->session->set('user-identity', [
             'id' => $user->id,
-            'name' => $user->name,
-            'profile' => $user->profile->name
+            'loginName' => $user->loginName,
+            'firstName' => $user->firstName,
+            'lastName' => $user->lastName,
         ]);
     }
 
@@ -264,12 +311,15 @@ class Auth extends Component
         $identity = $this->session->get('user-identity');
 
         if (isset($identity['id'])) {
+
             $user = Users::findFirstById($identity['id']);
+
             if ($user == false) {
                 throw new Exception('The user does not exist');
             }
             return $user;
         }
+
         return false;
     }
 

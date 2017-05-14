@@ -1,22 +1,22 @@
 <?php
 /**
- * DragonPHP : Delightfully simple forum software
+ * Loserhub : Delightfully simple forum software
  *
  * Licensed under The GNU License
  * For full copyright and license information, please see the LICENSE.txt
  * Redistributions of files must retain the above copyright notice.
  *
- * @link    http://www.dragonphp.com DragonPHP Project
+ * @link    http://www.loserhub.com Loserhub Project
  * @since   1.0.0
  * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
  */
-namespace DragonPHP\Library\Behavior;
+namespace Loserhub\Library\Behavior;
 
 use Phalcon\Di as PhD;
 use Phalcon\DiInterface;
 
 /**
- * \DragonPHP\Library\Behavior\Di
+ * \Loserhub\Library\Behavior\Di
  *
  * Dependency Injection Trait.
  * It should be used for classes which do not extend Injectable
@@ -27,7 +27,7 @@ use Phalcon\DiInterface;
  *     // Some logic
  * }
  *
- * use DragonPHP\Common\Library\Behavior\Di as DiBehavior;
+ * use Loserhub\Common\Library\Behavior\Di as DiBehavior;
  *
  * class B extends A {
  *     use DiBehavior {
@@ -70,7 +70,7 @@ use Phalcon\DiInterface;
  * @method \Phalcon\Logger|\Phalcon\Logger\AdapterInterface getLogger(mixed $params = null)
  * @method \Phalcon\Http\Request|\Phalcon\Http\RequestInterface getRequest(mixed $params = null)
  *
- * @package DragonPHP\Common\Library\Behavior
+ * @package Loserhub\Common\Library\Behavior
  */
 trait Di
 {
@@ -117,7 +117,7 @@ trait Di
      * Trying to obtain the dependence from the Dependency Injection Container.
      *
      * <code>
-     * use DragonPHP\Common\Library\Behavior\Di;
+     * use Loserhub\Common\Library\Behavior\Di;
      *
      * class A {
      *     // Some logic

@@ -25,7 +25,7 @@ use Phalcon\Mvc\View;
 use Phalcon\Mvc\View\Engine\Php as PhpEngine;
 use Phalcon\Mvc\ModuleDefinitionInterface;
 use Phalcon\Config;
-use DragonPHP\User\Library\Auth\Auth;
+use DragonPHP\Library\Auth\Auth;
 
 class Module implements ModuleDefinitionInterface
 {
@@ -41,7 +41,7 @@ class Module implements ModuleDefinitionInterface
         $loader->registerNamespaces([
             'DragonPHP\User\Controllers' => __DIR__ . '/controllers/',
             'DragonPHP\User\Forms'       => __DIR__ . '/forms/',
-            'DragonPHP\User\Library'     => __DIR__ . '/library/',
+            'DragonPHP\Library'     => __DIR__ . '/library/',
             'DragonPHP\User\Models'      => __DIR__ . '/models/'
         ]);
 

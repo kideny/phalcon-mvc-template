@@ -10,13 +10,13 @@
  * @since   1.0.0
  * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
  */
-namespace DragonPHP\Backend\Library\Behavior;
+namespace DragonPHP\Library\Behavior;
 
 use Phalcon\Di as PhD;
 use Phalcon\DiInterface;
 
 /**
- * \DragonPHP\Backend\Library\Behavior\Di
+ * \DragonPHP\Library\Behavior\Di
  *
  * Dependency Injection Trait.
  * It should be used for classes which do not extend Injectable
