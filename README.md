@@ -11,7 +11,7 @@ NOTE
 
 Demo
 
-![项目演示](https://github.com/kideny/qaytmaydi/blob/master/samples/backend.png)
+![项目演示](https://github.com/kideny/dragonphp/blob/master/samples/backend.png)
 
 The master branch will always contain the latest stable version. If you wish to check older versions or newer ones currently under development, please switch to the relevant branch.
 Get Started
@@ -30,8 +30,8 @@ To run this application on your machine, you need at least:
 
 Then you'll need to create the database and initialize schema:
 
-echo 'CREATE DATABASE qaytmaydi' | mysql -u root
-cat schemas/qaytmaydi.sql | mysql -u root qaytmaydi
+echo 'CREATE DATABASE dragonphp' | mysql -u root
+cat schemas/dragonphp.sql | mysql -u root dragonphp
 
 Also you can override application config by creating app/config/config.php (already gitignored).
 Installing Dependencies via Composer
@@ -42,7 +42,7 @@ curl -s http://getcomposer.org/installer | php
 
 Run the composer installer:
 
-cd qaytmaydi
+cd dragonphp
 php composer.phar install
 
 Improving this Sample

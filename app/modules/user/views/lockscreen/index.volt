@@ -31,7 +31,7 @@
         <a href="/backend/session/login">Or sign in as a different user</a>
     </div>
     <div class="lockscreen-footer text-center">
-        Copyright &copy; 2016-2017 <b><a href="http://www.qaytmaydi.cn" title="qaytmaydi" class="text-black">DragonPHP Studio</a></b><br>        All rights reserved
+        Copyright &copy; 2016-2017 <b><a href="http://www.dragonphp.cn" title="dragonphp" class="text-black">DragonPHP Studio</a></b><br>        All rights reserved
     </div>
 </div>
 <!-- /.center -->

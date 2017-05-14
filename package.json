@@ -1,13 +1,13 @@
 {
-  "name": "qaytmaydi",
+  "name": "dragonphp",
   "version": "1.0.0",
   "description": "A phalcon mutli-module demo.",
   "author": "Frank kennedy Yuan",
-  "homepage": "https://github.com/kideny/qaytmaydi",
+  "homepage": "https://github.com/kideny/dragonphp",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kideny/qaytmaydi"
+    "url": "https://github.com/kideny/dragonphp"
   },
   "dependencies": {
     "admin-lte": "^2.3.8",

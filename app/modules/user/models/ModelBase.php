@@ -1,12 +1,12 @@
 <?php
 /**
-* qaytmaydi : Delightfully simple forum software
+* dragonphp : Delightfully simple forum software
 *
 * Licensed under The GNU License
 * For full copyright and license information, please see the LICENSE.txt
 * Redistributions of files must retain the above copyright notice.
 *
-* @link    http://qaytmaydi.com qaytmaydi Project
+* @link    http://dragonphp.com dragonphp Project
 * @since   1.0.0
 * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 */
@@ -17,11 +17,11 @@ use Phalcon\DI\FactoryDefault;
 use Phalcon\Mvc\Model\Resultset\Simple as Resultset;
 
 /**
-* \qaytmaydi\User\Models\ModelBase
+* \dragonphp\User\Models\ModelBase
 *
 * It is common model basics for Mysql
 *
-* @package qaytmaydi\Models
+* @package dragonphp\Models
 */
 class ModelBase extends Model
 {

@@ -8,9 +8,9 @@
     <meta name="renderer" content="webkit">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>DragonPHP Admin</title>
-    <meta name="description" content="qaytmaydi">
+    <meta name="description" content="dragonphp">
     <meta name="keywords" content="loser, hub">
-    <meta name="author" content="qaytmaydi">
+    <meta name="author" content="dragonphp">
     <!-- Bootstrap 3.3.7 -->
     {{ stylesheet_link('/assets/static/bootstrap/css/bootstrap.min.css') }}
     <!-- Font Awesome -->

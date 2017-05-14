@@ -10,7 +10,7 @@
 |                                                                        |
 | If you did not receive a copy of the license and are unable to         |
 | obtain it through the world-wide-web, please send an email             |
-| to license@qaytmaydi.com so we can send you a copy immediately.       |
+| to license@dragonphp.com so we can send you a copy immediately.       |
 +------------------------------------------------------------------------+
 */
 namespace DragonPHP\Backend\Models;

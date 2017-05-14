@@ -14,7 +14,7 @@ return new \Phalcon\Config([
         'host'     => 'xxxxx',
         'username' => 'xxxxx',
         'password' => 'xxxxx',
-        'dbname'   => 'wwwqaytmaydicn',
+        'dbname'   => 'wwwdragonphpcn',
         'charset'  => 'utf8',
     ],
 
@@ -24,7 +24,7 @@ return new \Phalcon\Config([
         'migrationsDir'  => APP_PATH . '/migrations/',
         'cacheDir'       => BASE_PATH . '/cache/',
         'baseUri'        => '/'
-        //'baseUri'        => '/qaytmaydi/'
+        //'baseUri'        => '/dragonphp/'
     ],
 
     /**
