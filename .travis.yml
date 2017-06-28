@@ -86,7 +86,7 @@ script:
 notifications:
   email:
     recipients:
-      - build@phalconphp.com
+      - 528803867@qq.com
     on_success: change
     on_failure: always
 

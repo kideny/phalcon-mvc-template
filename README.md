@@ -1,5 +1,7 @@
 DragonPHP
 
+(https://api.travis-ci.org/phalconfans/dragonphp.svg?branch=master)
+
 Phalcon is a web framework delivered as a C extension providing high performance and lower resource consumption.
 
 This is a mutli-module application for the Phalcon Framework. We expect to implement as many features as possible to showcase the framework and its potential.
