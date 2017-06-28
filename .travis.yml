@@ -5,15 +5,17 @@ dist: trusty
 
 php:
   - 5.6
+  - 7.0
+  - 7.1
 
 matrix:
   include:
     - php: 7.0
-      env: ZEND_BACKEND="--backend=ZendEngine3" PHALCON_VERSION="v3.0.0"
+      env: ZEND_BACKEND="--backend=ZendEngine3" PHALCON_VERSION="3.2.x"
     - php: 7.0
-      env: ZEND_BACKEND="--backend=ZendEngine3" PHALCON_VERSION="v3.0.1"
-    - php: 7.0
-      env: ZEND_BACKEND="--backend=ZendEngine3" PHALCON_VERSION="3.0.x"
+      env: ZEND_BACKEND="--backend=ZendEngine3" PHALCON_VERSION="v3.2.0"
+    - php: 7.1
+      env: ZEND_BACKEND="--backend=ZendEngine3" PHALCON_VERSION="v3.2.0"
 
 services:
   - mysql
@@ -62,8 +64,7 @@ install:
 
 before_script:
   - echo 'CREATE DATABASE phanbook CHARSET=utf8 COLLATE=utf8_unicode_ci' | mysql -u root
-  - cat schema/phanbook.sql | mysql -uroot phanbook
-  - cat schema/examples.sql | mysql -uroot phanbook
+  - cat schema/qaytmaydi.sql | mysql -uroot phanbook
   - cp ./tests/.env.travis .env
   - php -S 127.0.0.1:8000 -t public/ .htrouter.php >/dev/null 2>&1 &
   - ulimit -c unlimited -S || true
@@ -77,7 +78,6 @@ notifications:
   email:
     recipients:
       - hello@dragonphp.com
-      - serghei@phalconphp.com
     on_success: change
     on_failure: always
   slack: phanbook:"${SLAK_TOKEN}"
