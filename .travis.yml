@@ -41,9 +41,9 @@ env:
     - DISPLAY=":99.0"
     - APPLICATION_ENV=testing
   matrix:
-    - PHALCON_VERSION="3.0.x"
-    - PHALCON_VERSION="v3.0.0"
-    - PHALCON_VERSION="v3.0.1"
+    - PHALCON_VERSION="3.2.x"
+    - PHALCON_VERSION="v3.2.0"
+    - PHALCON_VERSION="v3.2.0"
 
 before_install:
   - export PHP_MAJOR="$(echo $TRAVIS_PHP_VERSION | cut -d '.' -f 1,2)"
