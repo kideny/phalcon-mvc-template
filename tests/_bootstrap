@@ -1,3 +1,0 @@
-#!/usr/bin/env php
-<?php
-require dirname(dirname(__FILE__)) . "/app/bootstrap_cli.php";

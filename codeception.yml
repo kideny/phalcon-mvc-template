@@ -1,0 +1,64 @@
+# can be changed while bootstrapping project
+actor_suffix: Tester
+
+paths:
+    # where the modules stored
+    tests: tests
+
+    output: tests/_output
+
+    # directory for fixture data
+    data: tests/_data
+
+    # directory for custom modules (helpers)
+    support: tests/_support
+
+    envs: tests/_envs
+
+settings:
+    # name of bootstrap that will be used
+    # each bootstrap file should be
+    # inside a suite directory.
+    bootstrap: _bootstrap.php
+
+    colors: true
+
+    # Tests (especially functional) can take a lot of memory
+    # We set a high limit for them by default.
+    memory_limit: 1024M
+
+coverage:
+    enabled: true
+    whitelist:
+        include:
+            - app/Common/*.php
+extensions:
+    enabled:
+        - Codeception\Extension\RunFailed
+
+# Get params from .env file
+params:
+    - .env.test
+
+# Global modules configuration.
+modules:
+    config:
+        Db:
+            dsn: '%TEST_DB_DSN%'
+            user: '%TEST_DB_USERNAME%'
+            password: '%TEST_DB_PASSWORD%'
+            dump: tests/_data/dump.sql
+            populate: true
+            cleanup: true
+        MongoDb:
+            dsn: '%TEST_MONGODB_DSN%'
+            user: '%TEST_MONGODB_USERNAME%'
+            password: '%TEST_MONGODB_PASSWORD%'
+            dump: tests/_data
+            populate: true
+            # 这个配置用来控制插入数据到数据库后，是否清理。true为清空mongodb，false为不清空
+            cleanup: false
+            enabled:
+               - Codeception\Lib\Driver\MongoDb
+            
+error_level: "E_ALL"
