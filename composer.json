@@ -1,6 +1,8 @@
 {
     "name": "DragonPHP",
     "description": "DragonPHP is a fast PHP Framework.",
+    "homepage": "https://www.dragonphp.com",
+    "type": "project",
     "keywords": [
         "dragonphp",
         "website",
@@ -10,28 +12,32 @@
     ],
     "require": {
         "php": ">=7.0",
-        "ext-phalcon": "^3.0",
-        "phalcon/incubator": "~3.0"
+        "ext-json": "*",
+        "ext-PDO": "*",
+        "ext-phalcon": "^3.1",
+        "phalcon/incubator": "~3.1"
     },
     "require-dev": {
-        "phpunit/phpunit": "5.7.*",
+        "phalcon/devtools": "3.*",
+        "phalcon/dd": "^1",
+        "codeception/codeception": "2.*",
+        "codeception/specify": "~0.3",
+        "phpunit/phpunit": "6.*",
+        "phpunit/php-invoker": "1.*",
+        "phpunit/dbunit": "2.*",
         "squizlabs/php_codesniffer": "2.*",
-        "phpdocumentor/reflection-docblock": "3.1.*",
-        "phalcon/devtools": "3.0.*",
-        "codeception/codeception": "~2.2"
+        "friendsofphp/php-cs-fixer": "^2.3",
+        "fzaninotto/faker": "^1.6",
+        "Mockery/Mockery": "^0.9.9",
+        "fabfuel/prophiler": "~1.0",
+        "phpdocumentor/reflection-docblock": "3.1.*"
     },
-    "license": "BSD",
-    "authors": [
-        {
-            "name": "Frank Kennedy Yuan",
-            "email": "528803867@qq.com",
-            "homepage": "http://www.jicker.cn"
-        },
-        {
-            "name": "DragonPHP Company",
-            "homepage": "https://www.dragonphp.com"
-        }
-    ],
+    "license": "GPL v3",
+    "authors": [{
+        "name": "Frank Kennedy Yuan",
+        "email": "528803867@qq.com",
+        "homepage": "http://www.jicker.cn"
+    }],
     "autoload": {
         "psr-4": {
             "Phalcon\\": "Library/Phalcon/"
@@ -52,7 +58,7 @@
         "docs": "http://docs.dragonphp.com/",
         "wiki": "https://github.com/kideny/dragonphp/wiki",
         "irc": "irc://irc.freenode.org/dragonphp",
-        "rss" : "https://blog.dragonphp.com/rss"
+        "rss": "https://blog.dragonphp.com/rss"
     },
     "repositories": {
         "packagist": {
