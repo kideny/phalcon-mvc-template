@@ -11,10 +11,10 @@ return new \Phalcon\Config([
 
     'database' => [
         'adapter'  => 'Mysql',
-        'host'     => 'xxxxx',
-        'username' => 'xxxxx',
-        'password' => 'xxxxx',
-        'dbname'   => 'wwwdragonphpcn',
+        'host'     => '127.0.0.1',
+        'username' => 'phalcon',
+        'password' => 'phalcon',
+        'dbname'   => 'dragonphp',
         'charset'  => 'utf8',
     ],
 

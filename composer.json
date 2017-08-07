@@ -14,22 +14,27 @@
         "php": ">=7.0",
         "ext-json": "*",
         "ext-PDO": "*",
-        "ext-phalcon": "^3.1",
-        "phalcon/incubator": "~3.1"
+        "ext-openssl": "*",
+        "ext-phalcon": "^3.2",
+        "phalcon/incubator": "~3.2",
+        "webonyx/graphql-php": "^0.9"
     },
     "require-dev": {
+        "phalcon/zephir": "^0.9",
         "phalcon/devtools": "3.*",
         "phalcon/dd": "^1",
         "codeception/codeception": "2.*",
         "codeception/specify": "~0.3",
+        "phpunit/dbunit": "3.*",
         "phpunit/phpunit": "6.*",
         "phpunit/php-invoker": "1.*",
         "squizlabs/php_codesniffer": "2.*",
         "friendsofphp/php-cs-fixer": "^2.3",
+        "phpdocumentor/reflection-docblock": "3.1.*",
         "fzaninotto/faker": "^1.6",
         "Mockery/Mockery": "^0.9.9",
         "fabfuel/prophiler": "~1.0",
-        "phpdocumentor/reflection-docblock": "3.1.*"
+        "blackfire/php-sdk": "1.*"
     },
     "license": "GPL v3",
     "authors": [{
