@@ -16,7 +16,7 @@
         "ext-PDO": "*",
         "ext-openssl": "*",
         "ext-phalcon": "^3.2",
-        "phalcon/incubator": "~3.2",
+        "phalcon/incubator": "^3.2",
         "webonyx/graphql-php": "^0.9"
     },
     "require-dev": {
