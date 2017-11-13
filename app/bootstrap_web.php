@@ -58,6 +58,10 @@ try {
             'className' => 'DragonPHP\User\Module',
             'path' => __DIR__ . '/modules/user/Module.php',
         ],
+        'api' => [
+            'className' => 'DragonPHP\Api\Module',
+            'path' => __DIR__ . '/modules/Api/Module.php',
+        ],
         'cli' => [
             'className' => 'DragonPHP\Cli\Module',
             'path' => __DIR__ . '/modules/Cli/Module.php',
