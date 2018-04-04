@@ -10,9 +10,9 @@
     "url": "https://github.com/kideny/dragonphp"
   },
   "dependencies": {
-    "admin-lte": "^2.3.8",
+    "admin-lte": "^2.4.3",
     "bootstrap": "^4.0.0-alpha.6",
-    "jquery": "^2.2.*",
+    "jquery": "^3.0.*",
     "react": "^15.4.1",
     "react-dom": "^15.4.1"
   }
