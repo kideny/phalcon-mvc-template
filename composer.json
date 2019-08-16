@@ -4,11 +4,12 @@
     "homepage": "https://www.dragonphp.com",
     "type": "project",
     "keywords": [
-        "dragonphp",
         "website",
         "bootstrap",
         "phalcon",
-        "php7"
+        "php71",
+        "MVC",
+        "template"
     ],
     "require": {
         "php": ">=7.1",
@@ -32,7 +33,7 @@
         "Mockery/Mockery": "^0.9.9",
         "blackfire/php-sdk": "1.*"
     },
-    "license": "GPL v3",
+    "license": "MIT",
     "authors": [{
         "name": "Frank Kennedy Yuan",
         "email": "528803867@qq.com",
