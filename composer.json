@@ -1,6 +1,6 @@
 {
-    "name": "DragonPHP",
-    "description": "DragonPHP is a fast PHP Framework.",
+    "name": "Phalcon-MVC-Template",
+    "description": "Phalcon-MVC-Template is a web mvc template with phalcon framework.",
     "homepage": "https://www.dragonphp.com",
     "type": "project",
     "keywords": [
@@ -11,18 +11,14 @@
         "php7"
     ],
     "require": {
-        "php": ">=7.0",
-        "ext-json": "*",
-        "ext-PDO": "*",
-        "ext-openssl": "*",
-        "ext-phalcon": "^3.2",
+        "php": ">=7.1",
+        "ext-phalcon": "^3.4",
         "phalcon/zephir": "^0.9",
-        "phalcon/incubator": "^3.2",
-        "webonyx/graphql-php": "^0.9",
+        "phalcon/incubator": "^3.4",
         "guzzlehttp/guzzle": "6.*"
     },
     "require-dev": {
-        "phalcon/devtools": "^3.2",
+        "phalcon/devtools": "^3.4",
         "phalcon/dd": "^1",
         "codeception/codeception": "2.*",
         "codeception/specify": "~0.3",
@@ -65,10 +61,6 @@
         "rss": "https://blog.dragonphp.com/rss"
     },
     "repositories": {
-        "packagist": {
-            "type": "composer",
-            "url": "https://packagist.phpcomposer.com"
-        }
     }
 
 }

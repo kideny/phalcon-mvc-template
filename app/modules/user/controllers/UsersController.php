@@ -20,7 +20,6 @@
 namespace DragonPHP\User\Controllers;
 
 use Phalcon\Tag;
-use Phalcon\Mvc\View;
 use Phalcon\Mvc\Model\Criteria;
 use Phalcon\Paginator\Adapter\Model as Paginator;
 use DragonPHP\User\Models\Users;
